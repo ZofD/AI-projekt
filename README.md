@@ -1,5 +1,16 @@
 # AI-projekt
 Projekt dla profesora Paji
+###spis treści
+Proste założenia
+Struktura plików HTML
+Schemat klasy "container" w pliku index.html
+Schemat klasy "container" w plikach kategori gramatycznej
+Schemat klasy "container" w plikach kategori słownikowej
+Schemat klasy "container" w plikach kategori kulturowej
+## Proste założenia
+Poszczegulne typy plików powinny posiadać swoje katalogi.
+
+Każdy szablon HTML powinien posiadać własny plik CSS.
 ## Struktura plików HTML
 ```html
 <HTML>
@@ -25,7 +36,7 @@ Projekt dla profesora Paji
     </BODY>
 </HTML>
 ```
-## Struktura klasy "container" w pliku index.html
+## Schemat klasy "container" w pliku index.html
 ```html
 <div class = "content">
     <div class = "component"><!--x9-->
