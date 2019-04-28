@@ -5,22 +5,38 @@
 			DŁUGI kurs jezyka angielskiego
 		</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<link rel="stylesheet" href="./css/styleMob.css" />
+		<link rel="stylesheet" href="./css/styleMobGPT.css" />
+
 		<link rel="stylesheet" href="./css/style.css">
 		<link rel="stylesheet" href="./css/style1280.css">
+
 		<script src="./jq/jquery-3.3.1.min.js"></script>
 		<script src="./jq/jquery.color-2.1.2.min.js"></script>
 		<script src="./js/jq.js"></script>
+
+		<script src="./js/jq_menuMob.js"></script>
+
+		<!--	Bootstrap 4.3.1		-->
+
+		<link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap-grid.css" />
+		<script src="./bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+		
 	</head>
 	<body>
-		<div id="container">
+		<div id="container" class="container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 			<header>
 				<img src="img/logo.png">
 			</header>
-			<div class="menu_horizontal">
-				<div>
+			<div class="menu_horizontal col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<nav class="ham_button ham_button_def col-xl-0 col-lg-0 col-md-12  col-sm-12 col-12">
+				</nav>
+				<div class="menu_horizontal_curent menu_horizontal_mob col-12 col-sm-12 col-md-12 col-xl-2 col-lg-2   ">
 					<a href="index.html">Main page</a>
 				</div>
-				<div class="menu_horizontal_curent">
+				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Gramar</a>
 					<ul>
 						<li><a href="">Present tenses</a></li>
@@ -29,7 +45,7 @@
 						<li><a href="lorem_ipsum.html">Modal verbs</a></li>
 					</ul>
 				</div>
-				<div>
+				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Vocabulary</a>
 					<ul>
 						<li><a href="czlowiek.html">Human</a></li>
@@ -41,7 +57,7 @@
 						<li><a href="idiomy.html">Idioms</a></li>
 					</ul>
 				</div>
-				<div>
+				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Phonetics</a>
 					<ul>
 						<li><a href="bee.html">Monophtongs</a></li>
@@ -51,7 +67,7 @@
 						<li><a href="lorem_ipsum.html">Liquids and veral nasal</a></li>
 					</ul>
 				</div>
-				<div>
+				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Culture</a>
 					<ul>
 						<li><a href="geographical_identities.html">The country</a></li>
@@ -67,7 +83,7 @@
 						<li><a href="lorem_ipsum.html">Leisure, sports and the arts</a></li>
 					</ul>
 				</div>
-				<div>
+				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Log in</a>
 				</div>
 			</div>
@@ -185,26 +201,34 @@
 					</div>
 				</div>	
 				<div class="content_left">
-					<h2>Present tenses</h2>
-					<a href="gramatyka_present_countinuous.html"><p>Present continuous</p></a>
-					<a href="lorem_ipsum.html"><p>Present simple</p></a>
-					<a href="lorem_ipsum.html"><p>Present perfect</p></a>
-					<a href="lorem_ipsum.html"><p>Present perfect continuous</p></a>
-					<h2>Past tenses</h2>
-					<a href="lorem_ipsum.html"><p>Past continuous</p></a>
-					<a href="lorem_ipsum.html"><p>Past simple</p></a>
-					<a href="lorem_ipsum.html"><p>Past perfect</p></a>
-					<a href="lorem_ipsum.html"><p>Past perfect continuous</p></a>
-					<h2>Future tenses</h2>
-					<a href="lorem_ipsum.html"><p>Future continuous</p></a>
-					<a href="lorem_ipsum.html"><p>Future simple</p></a>
-					<a href="lorem_ipsum.html"><p>Future perfect</p></a>
-					<a href="lorem_ipsum.html"><p>Future perfect continuous</p></a>
-					<h2>Future in the past tenses</h2>
-					<a href="lorem_ipsum.html"><p>Future continuous in the past</p></a>
-					<a href="lorem_ipsum.html"><p>Future in the past</p></a>
-					<a href="lorem_ipsum.html"><p>Future perfect in the past</p></a>
-					<a href="lorem_ipsum.html"><p>Future perfect continuous in the past</p></a>
+					<div class="present_tenses">
+						<h2>Present tenses</h2>
+						<a href="gramatyka_present_countinuous.html"><p>Present continuous</p></a>
+						<a href="lorem_ipsum.html"><p>Present simple</p></a>
+						<a href="lorem_ipsum.html"><p>Present perfect</p></a>
+						<a href="lorem_ipsum.html"><p>Present perfect continuous</p></a>
+					</div>
+					<div class="past_tenses">
+						<h2>Past tenses</h2>
+						<a href="lorem_ipsum.html"><p>Past continuous</p></a>
+						<a href="lorem_ipsum.html"><p>Past simple</p></a>
+						<a href="lorem_ipsum.html"><p>Past perfect</p></a>
+						<a href="lorem_ipsum.html"><p>Past perfect continuous</p></a>
+					</div>
+					<div class="future_tenses">
+						<h2>Future tenses</h2>
+						<a href="lorem_ipsum.html"><p>Future continuous</p></a>
+						<a href="lorem_ipsum.html"><p>Future simple</p></a>
+						<a href="lorem_ipsum.html"><p>Future perfect</p></a>
+						<a href="lorem_ipsum.html"><p>Future perfect continuous</p></a>
+					</div>
+					<div class="future_in_the_past_tenses">
+						<h2>Future in the past tenses</h2>
+						<a href="lorem_ipsum.html"><p>Future continuous in the past</p></a>
+						<a href="lorem_ipsum.html"><p>Future in the past</p></a>
+						<a href="lorem_ipsum.html"><p>Future perfect in the past</p></a>
+						<a href="lorem_ipsum.html"><p>Future perfect continuous in the past</p></a>
+					</div>
 				</div>
 			</div>
 			<footer>
