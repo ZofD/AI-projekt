@@ -36,6 +36,17 @@
         position: relative;
         top: -340px;
     }
+
+    /*
+        podstrony
+    */
+    
+    .content_left{
+        width: 100%!important;
+    }
+    .content_right{
+        width: 100%!important;
+    }
 }
 
 @media (min-width: 992px) {
