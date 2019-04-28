@@ -84,59 +84,49 @@ header img{
 	padding: 0px!important;
 }
 
-.content_left{
+.component_left{
 	background-color: white;
-	height: 0px;
-	width: 19.666%;
+	width: 16.666%;
 	float: right;
 	overflow-y: auto;
 	overflow-x: hidden;
 	box-shadow: -10px 0px 28px 0px rgba(0,0,0,0.4);
 }
 
-.content_left h2{
+.component_left h2{
 	margin: 0px;
 	padding: 20px 10px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.content_left a{
+.component_left a{
 	text-decoration: none;
 }
 
-.content_left a:hover{
+.component_left a:hover{
 	text-decoration: underline;
 }
 
-.content_left a p{
+.component_left a p{
 	margin: 0px;
 	padding: 10px 20px;
 	text-transform: capitalize;
 	color: black;
 }
 
-.content_right{
-	width: 80.334%;
+.component_right{
+	width: 77.334%;
 	padding: 0px 3% 39px 3%;
 	float: right;
 }
 
-.content_right > div{
-	padding: 0px 50px;
-}
-
-.content_right h2, .content_right h3{
-	margin: 0px;
-	padding: 16px 0px;
-}
-
-.content_right h1{
+.component_right > h1{
 	margin: 0px;
 	padding: 25px 0px;
 }
 
-.content_right p{
+.component_right p{
 	margin: 0px;
 	padding: 10px 0px;
 	text-align: justify;
@@ -147,41 +137,41 @@ header img{
 	text-transform: uppercase;
 }
 
-.content_right p.example{
-	background-color: #9ED8FF;
-	padding: 5px 0px;
-	text-align: center;
-	font-style: italic;
-	font-size: 16px;
-	text-transform: none;
+p.example{
+	background-color: #9ED8FF!important;
+	padding: 5px 0px!important;
+	text-align: center!important;
+	font-style: italic!important;
+	font-size: 16px!important;
+	text-transform: none!important;
 	text-indent: 0px!important;
 }
 
-.content_right h3{
+.component_right h3{
 	text-transform: uppercase;
 }
 
-.content_right h3.note{
-	padding: 8px 0px;
-	color: red;
+h3.note{
+	padding: 8px 0px!important;
+	color: red!important;
 }
 
 div.note > p.example{
-	background-color: #FFA09F;
+	background-color: #FFA09F!important;
 }
 
-.content_right h3.example{
-	padding: 8px 0px;
-	text-align: left;
+h3.example{
+	padding: 8px 0px!important;
+	text-align: left!important;
 }
 
-.content_right > div ul{
+.component_right > div ul{
 	margin: 0px;
 	padding: 0px;
 	list-style-position: inside;
 }
 
-.content_right > div ul li{
+.component_right > div ul li{
 	padding:10px 0px 10px 50px;
 	text-align: justify;
 	word-spacing:3px;
@@ -191,184 +181,10 @@ div.note > p.example{
 	text-transform: uppercase;
 }
 
-.test{
-	padding: 20px 28%!important;
-}
-
-.test a{
-	text-decoration: none;
-}
-
-.test h1{
+.button {
 	background-color: white;
 	padding: 10px 0px;
-	color: #0082ff;
-	text-align: center;
-	text-transform: uppercase;
-	border: 1px solid #0082ff;
-}
-
-.test h1:hover{
-	background-color: #0082ff;
-	color: white;
-}
-
-.content_main{
-	padding: 0px!important;
-}
-
-.content_main > div{
-	padding: 33px 0px;
-}
-
-.content_main > div:nth-child(odd){
-	background-color: #fafafa;
-	overflow: hidden;
-}
-
-.content_main > div:nth-child(odd) div div a h2{
-	color: #0082ff;
-	border: 1px solid #0082ff;
-}
-
-.content_main > div:nth-child(odd) div div a h2:hover{
-	background-color: #0082ff;
-	color: white ;
-	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
-}
-
-.content_main > div:nth-child(even) div div a h2{
-	color: white;
-	border: 1px solid white;
-}
-
-.content_main > div:nth-child(even) div div a h2:hover{
-	background-color: white;
-	color: #0082ff;
-	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
-}
-
-.button{
-	padding: 0px 78% 0px 5%;
-}
-
-.button a{
-	text-decoration: none;
-}
-
-.button a h2{
-	padding: 10px 0px;
 	margin: 0px;
-	text-align: center;
-}
-
-.content_main > div:nth-child(even){
-	background-color: #0082ff;
-	overflow: hidden;
-}
-
-.main_img{
-	padding: 80px 2%;
-	float: left;
-}
-
-.main_img > img{
-	width: 100%;
-}
-
-.main_text{
-	padding: 50px 4%;
-	float: left;
-}
-
-.main_text h1{
-	padding: 20px 0px;
-	margin: 0px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 2.5em;
-}
-
-.main_text > h2{
-	padding: 20px 5%;
-	margin: 0px;
-	text-align: justify;
-	font-size: 1.5em;
-	line-height: 35px;
-}
-
-.h1_words{
-	text-align: center;
-}
-
-.heading{
-	
-}
-
-.heading > div{
-	width: 100%;
-}
-
-.heading > div h2{
-	color: #fafafa;
-	text-align: center;
-}
-
-.previous{
-	background-image: url(../img/previous.png);
-	width: 50px!important;
-	padding: 31.5px 0px;
-	position: relative;
-	top: 163px;
-	left: -50px;
-	cursor: pointer;
-}
-
-.next{
-	background-image: url(../img/next.png);
-	width: 50px!important;
-	padding: 31.5px 0px;
-	position: relative;
-	top: 101px;
-	left: 100%;
-	cursor: pointer;
-}
-
-.words{
-	text-align: center;
-}
-
-.words div{
-	padding: 20px 28%;
-}
-.words div a{
-	text-decoration: none;
-}
-
-.words div div{
-	padding: 20px 28%;
-}
-
-#english{
-	padding: 20px 0px!important;
-	font-size: 24px;
-	text-indent: 0px!important;
-	text-align: center!important;
-	text-transform: none!important;
-	visibility: hidden;
-}
-
-#polish{
-	padding: 20px 0px!important;
-	font-size: 24px;
-	text-indent: 0px!important;
-	text-align: center!important;
-	text-transform: none!important;
-}
-
-.show{
-	background-color: white;
-	padding: 10px 0px!important;
 	color: #0082ff;
 	font-size: 20px;
 	text-align: center;
@@ -377,14 +193,14 @@ div.note > p.example{
 	cursor: pointer;
 }
 
-.show:hover{
+.button:hover {
 	background-color: #0082ff;
 	color: white;
+	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
 }
 
-.bee{
-	text-indent: 0px!important;
-	padding-left: 50px!important;
+a {
+	text-decoration: none;
 }
 
 footer{
