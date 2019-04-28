@@ -1,5 +1,6 @@
 # AI-projekt
 Projekt dla profesora Paji
+
 ###spis treści
 Proste założenia
 Struktura plików HTML
