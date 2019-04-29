@@ -41,10 +41,10 @@
         podstrony
     */
     
-    .content_left{
+    .component_left{
         width: 100%!important;
     }
-    .content_right{
+    .component_right{
         width: 100%!important;
     }
 }

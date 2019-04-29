@@ -86,7 +86,7 @@ header img{
 
 .component_left{
 	background-color: white;
-	width: 16.666%;
+	width: 19.666%;
 	float: right;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -116,7 +116,7 @@ header img{
 }
 
 .component_right{
-	width: 77.334%;
+	width: 80.334%;
 	padding: 0px 3% 39px 3%;
 	float: right;
 }
