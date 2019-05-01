@@ -89,9 +89,22 @@
 			</div>
 			<div class="content contentLogIn">
 				<div class="form offset-xl-4 offset-lg-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-					<div class="">
-                        
-                    </div>
+					<form metod="POST" action="">
+                        <p>Imie:</p>
+                        <input class="inputText" type="text" name="name"/>
+                        <p>Nazwisko:</p>
+                        <input class="inputText" type="text" name="surname"/>
+                        <p>PESEL:</p>
+                        <input class="inputText" type="text" name="Pesel"/>
+                        <p>E-mail:</p>
+                        <input class="inputText" type="text" name="email"/>
+                        <p>Hasło:</p>
+                        <input class="inputText" type="password" name="password"/>
+                        <p>Powtórz hasło:</p>
+                        <input class="inputText" type="password" name="rep_password"/>
+                        <label><input class="inputCheckBox" type="checkbox" name="regul">Akceptuję regulamin.</label>
+                        <button>Zarejestruj</button>
+                    </form>
 				</div>
 			</div>
 			<footer>
