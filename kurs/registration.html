@@ -7,6 +7,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		
 		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/style_regi.css">
 		<link rel="stylesheet" href="./css/style_logIn.css">
 		<link rel="stylesheet" href="./css/style1280.css">
 
@@ -16,6 +17,7 @@
 		<script src="./jq/jquery-3.3.1.min.js"></script>
 		<script src="./jq/jquery.color-2.1.2.min.js"></script>
 		<script src="./js/jq.js"></script>
+		<script src="./js/jq_regi.js"></script>
 
 		<script src="./js/jq_menuMob.js"></script>
 
@@ -89,21 +91,37 @@
 			</div>
 			<div class="content contentLogIn">
 				<div class="form offset-xl-4 offset-lg-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-					<form metod="POST" action="">
-                        <p>Imie:</p>
-                        <input class="inputText" type="text" name="name"/>
-                        <p>Nazwisko:</p>
+					<form id="regiForm" metod="POST" action="">
+						<h2>Rejestracja do ENG</h2>
+                        <p>Imie*:</p>
+                        <input class="inputText" type="text" name="nameUser"/>
+                        <p>Nazwisko*:</p>
                         <input class="inputText" type="text" name="surname"/>
-                        <p>PESEL:</p>
+                        <p>PESEL*:</p>
                         <input class="inputText" type="text" name="Pesel"/>
-                        <p>E-mail:</p>
+                        <p>E-mail*:</p>
                         <input class="inputText" type="text" name="email"/>
-                        <p>Hasło:</p>
+                        <p>Hasło*:</p>
                         <input class="inputText" type="password" name="password"/>
-                        <p>Powtórz hasło:</p>
+                        <p>Powtórz hasło*:</p>
                         <input class="inputText" type="password" name="rep_password"/>
-                        <label><input class="inputCheckBox" type="checkbox" name="regul">Akceptuję regulamin.</label>
-                        <button>Zarejestruj</button>
+						<p>Miejscowość*:</p>
+                        <input class="inputText" type="text" name="city"/>
+						<p>Ulica*:</p>
+                        <input class="inputText" type="text" name="street"/>
+						<p>Numer budynku*:</p>
+						<input class="inputTextBuild" type="text" name="building"/>
+						<p>Numer lokalu:</p>
+						<input class="inputTextBuild" type="text" name="flat"/>
+						<p>Kod pocztowy*:</p>
+						<input type="text" name="kod1"/>
+						<p>
+                        	<label><input class="inputCheckBox" type="checkbox" name="regul">Akceptuję regulamin.</label>
+                        	<button type="buttton" id="submit" disabled>Zarejestruj</button>
+						</p>
+						<p>
+							* - pola wymagane
+						</p>
                     </form>
 				</div>
 			</div>

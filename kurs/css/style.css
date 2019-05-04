@@ -7,7 +7,7 @@ src:url(../kroj/dosis/Dosis-Light.otf);
 body{
 	margin: 0px;
 	padding: 0px;
-	font-family: dosis;
+	font-family: dosis!important;
 }
 
 #container{
