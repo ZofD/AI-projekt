@@ -7,10 +7,11 @@ $(document).ready(function(){
 	$(".component_right").css("min-height", windowH-footerH-menuH-headerH+"px");
 	var contentRightHeight = $(".component_right").height();
 	$(".component_left").css("height", contentRightHeight+39+"px");
-	$(".content").css("min-height", windowH-footerH-menuH-headerH+"px");
+	$(".contentLogIn").css("min-height", windowH-footerH-menuH-headerH+"px");
 	$(document).hover(function(){
 		contentRightHeight = $(".component_right").height();
 		$(".component_left").css("height", contentRightHeight+39+"px");
+		$(".contentLogIn").css("min-height", windowH-footerH-menuH-headerH+"px");
 	});
 	menu.click(function(){
 		$(this).siblings().slideToggle();
