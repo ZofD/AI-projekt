@@ -200,7 +200,7 @@ h3.example{
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none!important;
 }
 
 footer{

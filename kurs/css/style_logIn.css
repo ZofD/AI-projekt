@@ -35,3 +35,16 @@ p{
 	font-size: 18px;
 	text-transform: uppercase;
 }
+
+p > a:hover{
+    text-decoration: underline!important;
+}
+
+.inputCheckBox{
+    width: auto!important;
+    margin: 0px 10px!important;
+}
+
+label{
+    width: 60%;
+}
