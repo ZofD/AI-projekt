@@ -7,7 +7,7 @@ src:url(../kroj/dosis/Dosis-Light.otf);
 body{
 	margin: 0px;
 	padding: 0px;
-	font-family: dosis;
+	font-family: dosis!important;
 }
 
 #container{
@@ -46,7 +46,7 @@ header img{
 .menu_horizontal div a{
 	background-color: #fafafa;
 	display: block;
-	padding: 14px 0px;
+	padding: 12px 0px;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #0082ff;
@@ -86,7 +86,7 @@ header img{
 
 .component_left{
 	background-color: white;
-	width: 19.666%;
+	width: 16.666%;
 	float: right;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -116,7 +116,7 @@ header img{
 }
 
 .component_right{
-	width: 80.334%;
+	width: 83.334%;
 	padding: 0px 3% 39px 3%;
 	float: right;
 }

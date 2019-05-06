@@ -4,12 +4,14 @@ $(document).ready(function(){
 	var menuH = $(".menu_horizontal").height();
 	var footerH = $("footer").height();
 	var windowH = $(window).height();
-	$(".component_right").css("min-height", windowH-footerH-menuH-headerH-39+"px");
+	$(".component_right").css("min-height", windowH-footerH-menuH-headerH+"px");
 	var contentRightHeight = $(".component_right").height();
 	$(".component_left").css("height", contentRightHeight+39+"px");
+	$(".contentLogIn").css("min-height", windowH-footerH-menuH-headerH+"px");
 	$(document).hover(function(){
 		contentRightHeight = $(".component_right").height();
 		$(".component_left").css("height", contentRightHeight+39+"px");
+		$(".contentLogIn").css("min-height", windowH-footerH-menuH-headerH+"px");
 	});
 	menu.click(function(){
 		$(this).siblings().slideToggle();
