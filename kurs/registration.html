@@ -16,6 +16,7 @@
 		<script src="./jq/jquery-3.3.1.min.js"></script>
 		<script src="./jq/jquery.color-2.1.2.min.js"></script>
 		<script src="./js/jq.js"></script>
+		<script src="./js/jq_regi.js"></script>
 
 		<script src="./js/jq_menuMob.js"></script>
 
@@ -89,34 +90,57 @@
 			</div>
 			<div class="content contentLogIn">
 				<div class="form offset-xl-4 offset-lg-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-					<form id="regiForm" metod="POST" action="">
+					<form id="regiForm" metod="POST" action="regi.php">
 						<h2>Rejestracja do ENG</h2>
+
                         <p>Imie*:</p>
-                        <input class="inputText" type="text" name="nameUser"/>
+						<input class="inputText" type="text" name="nameUser"/>
+						
                         <p>Nazwisko*:</p>
-                        <input class="inputText" type="text" name="surname"/>
+						<input class="inputText" type="text" name="surname"/>
+						
                         <p>PESEL*:</p>
-                        <input class="inputText" type="text" name="Pesel"/>
+						<input class="inputText" type="text" name="Pesel"/>
+						<p class="pesel error" id="pesel">To nie jest pesel.</p>
+
                         <p>E-mail*:</p>
-                        <input class="inputText" type="text" name="email"/>
+						<input class="inputText" type="text" name="email"/>
+						<p class="email error" id="email">To nie jest adress e-maile.</p>
+
+						<p>Login*:</p>
+						<input class="inputText" type="text" name="login"/>
+						
                         <p>Hasło*:</p>
-                        <input class="inputText" type="password" name="password"/>
+						<input class="inputText" type="password" name="npassword"/>
+						<p class="password error" id="password">Hasło musi mieć więcej niż 6 znaków.</p>
+
                         <p>Powtórz hasło*:</p>
-                        <input class="inputText" type="password" name="rep_password"/>
+						<input class="inputText" type="password" name="rep_password"/>
+						<p class="rep_password error" id="rep_password">Hasła nie są idetyczne.</p>
+
 						<p>Miejscowość*:</p>
-                        <input class="inputText" type="text" name="city"/>
+						<input class="inputText" type="text" name="city"/>
+						
 						<p>Ulica*:</p>
-                        <input class="inputText" type="text" name="street"/>
+						<input class="inputText" type="text" name="street"/>
+						
 						<p>Numer budynku*:</p>
 						<input class="inputTextBuild" type="text" name="building"/>
+
 						<p>Numer lokalu:</p>
 						<input class="inputTextBuild" type="text" name="flat"/>
+
 						<p>Kod pocztowy*:</p>
 						<input type="text" name="kod1"/>
+						<p class="kod1 error" id="kod1">Błędny kod pocztowy.</p>
+
+						<p>Poczta*:</p>
+						<input type="text" name="postoffice"/>
+						
 						<p>
 							<label><input class="inputCheckBox" type="checkbox" name="regul">Akceptuję regulamin.</label>
 						</p>
-                        	<input class="button" type="submit" id="submit" value="Zarejestruj">
+                        	<input class="submit" type="submit" id="submit" value="Zarejestruj" disabled="disabled">
 						<p>
 							* - pola wymagane
 						</p>
