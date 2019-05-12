@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!Doctype html>
 <html>
 	<head>
@@ -91,8 +94,13 @@
 			<div class="content contentLogIn">
 				<div class="form offset-xl-4 offset-lg-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
 					<div class="">
-                        <form action="user.html" method="POST">
+                        <form action="logi.php" method="POST">
 							<h2>Logowanie do ENG</h2>
+							<p class="error">
+								<?php
+									if(isset($_SESSION['blad']))echo $_SESSION['blad'];
+								?>
+							</p>
 							<p>Login:</p>
 							<input type="text" name="login"/>
 							<p>Hasło:</p>
