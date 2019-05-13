@@ -6,11 +6,51 @@ function checkValue(){
     if(
         (form["nameUser"].value != "" && form["nameUser"].value != null) &&
         (form["surname"].value != "" && form["surname"].value != null) &&
-        (form["login"].value != "" && form["login"].value != null) &&
         (form["city"].value != "" && form["city"].value != null) &&
         (form["street"].value != "" && form["street"].value != null) &&
         (form["building"].value != "" && form["building"].value != null) &&
         (form["postoffice"].value != "" && form["postoffice"].value != null)
+    ){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function checkLoginNotNull(){
+    /*
+    Funkcja sprawdza czy pole "login" na stronie rejestracji jest wypełnione (nie jest puste).
+    */
+    var form = document.forms[0];
+    if(
+        (form["login"].value != "" && form["login"].value != null)
+    ){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function checkLoginSize(){
+    /*
+    Funkcja sprawdza czy pole "login" na stronie rejestracji ma więcej niż 3 znaki.
+    */
+    var form = document.forms[0];
+    if(
+        (form["login"].value.length >= 3)
+    ){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function checkLogin(){
+    /*
+    Funkcja sprawdza czy pole "login" na stronie rejestracji jest wypełnione poprawnie.
+    */
+    if(
+        checkLoginNotNull() && checkLoginSize()
     ){
         return true;
     }else{
@@ -231,7 +271,7 @@ function checkCheckboxActive(){
 
 $(document).ready(function(){
     $(document).mouseover(function(){
-        if( checkValue() && checkEmail() && checkPESEL() && checkPassword() && checkKod1() && checkCheckboxActive() ){
+        if( checkValue() && checkEmail() && checkPESEL() && checkLogin() && checkPassword() && checkKod1() && checkCheckboxActive() ){
             $("#submit").attr("disabled", false);
             $("#submit").removeClass("submitStart");
             $("#submit").addClass("button2");
@@ -261,6 +301,16 @@ $(document).ready(function(){
             }else{
                 $("#email").removeClass("emailError");
                 $("#email").addClass("email");
+            }
+        }
+
+        if(checkLoginNotNull()){
+            if( !(checkLoginSize()) ){
+                $("#login").removeClass("login");
+                $("#login").addClass("loginError");
+            }else{
+                $("#login").removeClass("loginError");
+                $("#login").addClass("login");
             }
         }
 

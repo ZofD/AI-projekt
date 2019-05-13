@@ -75,6 +75,11 @@ label{
     cursor: pointer;
 }
 
+.reCaptcha{
+    margin: 10px 20%!important;
+    width: 60%;
+}
+
 .error{
     color: red;
 }
@@ -90,6 +95,13 @@ label{
     display: none;
 }
 .emailError{
+    display: block;
+}
+
+.login{
+    display: none;
+}
+.loginError{
     display: block;
 }
 
