@@ -1,9 +1,5 @@
 <?php
 	session_start();
-	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true)){
-		header('Location: user.php');
-		exit();
-	}
 ?>
 <!Doctype html>
 <html>
@@ -12,18 +8,16 @@
 			DŁUGI kurs jezyka angielskiego
 		</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		
-		<link rel="stylesheet" href="./css/style.css">
-		<link rel="stylesheet" href="./css/style_logIn.css">
-		<link rel="stylesheet" href="./css/style1280.css">
 
 		<link rel="stylesheet" href="./css/styleMob.css" />
-		<link rel="stylesheet" href="./css/styleMobBe.css" />
+		<link rel="stylesheet" href="./css/styleMobLI.css" />
+
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/style1280.css">
 
 		<script src="./jq/jquery-3.3.1.min.js"></script>
 		<script src="./jq/jquery.color-2.1.2.min.js"></script>
 		<script src="./js/jq.js"></script>
-		<script src="./js/jq_login.js"></script>
 
 		<script src="./js/jq_menuMob.js"></script>
 
@@ -41,7 +35,7 @@
 			<div class="menu_horizontal col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<nav class="ham_button ham_button_def col-xl-0 col-lg-0 col-md-12  col-sm-12 col-12">
 				</nav>
-				<div class="menu_horizontal_mob col-12 col-sm-12 col-md-12 col-xl-2 col-lg-2   ">
+				<div class="menu_horizontal_curent menu_horizontal_mob col-12 col-sm-12 col-md-12 col-xl-2 col-lg-2   ">
 					<a href="index.html">Main page</a>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
@@ -91,28 +85,63 @@
 						<li><a href="lorem_ipsum.html">Leisure, sports and the arts</a></li>
 					</ul>
 				</div>
-				<div class="menu_horizontal_curent menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
-					<a>Log in</a>
+				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+					<?php
+						if(isset($_SESSION['zalogowany'])){
+							echo '<a href="logout.php">Log out</a>';
+						}else{
+							echo '<a href="login.php">Log in</a>';
+						}
+					?>
 				</div>
 			</div>
-			<div class="content contentLogIn">
-				<div class="form offset-xl-4 offset-lg-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-					<div class="">
-                        <form action="logi.php" method="POST">
-							<h2>Logowanie do ENG</h2>
-							<p class="error">
-								<?php
-									if(isset($_SESSION['blad']))echo $_SESSION['blad'];
-								?>
-							</p>
-							<p>Login:</p>
-							<input type="text" name="login"/>
-							<p>Hasło:</p>
-							<input type="text" name="password"/>
-							<p>Nie posiadasz jeszcze konta? <a href="registration.html">Zarejestruj</a></p>
-							<input class="button" type="submit" name="" value="Zaloguj"/>
-						</form>
-                    </div>
+			<div class="content">
+				<div class="component_right">
+					<h1>Lorem ipsum</h1>
+					<h2>Lorem ipsum</h2>
+					<div>
+						<h3>Lorem ipsum lorem ipsum</h3>
+						<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+						lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+						lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>			
+						<h3 class="example">Lorem ipsum</h3>
+						<p class="example">Lorem ipsum lorem ipsum lorem ipsum</p>
+						<p class="example">Lorem ipsum lorem ipsum lorem ipsum</p>
+						<div class="note">
+							<h3 class="note">Lorem ipsum</h3>
+							<p class="example">Lorem ipsum Lorem ipsum Lorem ipsum</p>
+						</div>
+					</div>
+				</div>	
+				<div class="component_left">
+					<div class="lorem_ipsum_first">
+						<h2>Lorem ipsum</h2>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+					</div>
+					<div class="lorem_ipsum">
+						<h2>Lorem ipsum</h2>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+					</div>
+					<div class="lorem_ipsum">
+					<h2>Lorem ipsum</h2>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+					</div>
+					<div class="lorem_ipsum">
+						<h2>Lorem ipsum</h2>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+						<a href="lorem_ipsum.html"><p>Lorem ipsum</p></a>
+					</div>
 				</div>
 			</div>
 			<footer>

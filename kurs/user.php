@@ -1,5 +1,9 @@
 <?php
 	session_start();
+	if (!isset($_SESSION['zalogowany'])){
+		header('Location: login.php');
+		exit();
+	}
 ?>
 <!Doctype html>
 <html>
@@ -88,7 +92,7 @@
 					</ul>
 				</div>
 				<div class="menu_horizontal_curent menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
-					<a href="login.html">Log out</a>
+					<a href="logout.php">Log out</a>
 				</div>
 			</div>
 			<div class="content">
