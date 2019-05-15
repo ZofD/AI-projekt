@@ -31,59 +31,59 @@
 	<body>
 		<div id="container" class="container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 			<header>
-				<img src="img/logo.png">
+				<img src="img/logo.png">			
 			</header>
 			<div class="menu_horizontal col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<nav class="ham_button ham_button_def col-xl-0 col-lg-0 col-md-12  col-sm-12 col-12">
 				</nav>
 				<div class="menu_horizontal_mob col-12 col-sm-12 col-md-12 col-xl-2 col-lg-2   ">
-					<a href="index.html">Main page</a>
+					<a href="index.php">Main page</a>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Gramar</a>
 					<ul>
-						<li><a href="gramatyka_present_countinuous.html">Present tenses</a></li>
-						<li><a href="lorem_ipsum.html">Past tenses</a></li>
-						<li><a href="lorem_ipsum.html">Future tenses</a></li>
-						<li><a href="lorem_ipsum.html">Modal verbs</a></li>
+						<li><a href="gramatyka_present_countinuous.php">Present tenses</a></li>
+						<li><a href="lorem_ipsum.php">Past tenses</a></li>
+						<li><a href="lorem_ipsum.php">Future tenses</a></li>
+						<li><a href="lorem_ipsum.php">Modal verbs</a></li>
 					</ul>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Vocabulary</a>
 					<ul>
-						<li><a href="czlowiek.html">Human</a></li>
-						<li><a href="lorem_ipsum.html">Home</a></li>
-						<li><a href="lorem_ipsum.html">School</a></li>
-						<li><a href="lorem_ipsum.html">Job</a></li>
-						<li><a href="lorem_ipsum.html">Family and friends</a></li>
-						<li><a href="lorem_ipsum.html">Food</a></li>
-						<li><a href="idiomy.html">Idioms</a></li>
+						<li><a href="czlowiek.php">Human</a></li>
+						<li><a href="lorem_ipsum.php">Home</a></li>
+						<li><a href="lorem_ipsum.php">School</a></li>
+						<li><a href="lorem_ipsum.php">Job</a></li>
+						<li><a href="lorem_ipsum.php">Family and friends</a></li>
+						<li><a href="lorem_ipsum.php">Food</a></li>
+						<li><a href="idiomy.php">Idioms</a></li>
 					</ul>
 				</div>
 				<div class="menu_horizontal_curent menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Phonetics</a>
 					<ul>
-						<li><a href="bee.html">Monophtongs</a></li>
-						<li><a href="lorem_ipsum.html">Diphtongs and Triphtongs</a></li>
-						<li><a href="lorem_ipsum.html">Plosives</a></li>
-						<li><a href="lorem_ipsum.html">Fricatives</a></li>
-						<li><a href="lorem_ipsum.html">Liquids and veral nasal</a></li>
+						<li><a href="bee.php">Monophtongs</a></li>
+						<li><a href="lorem_ipsum.php">Diphtongs and Triphtongs</a></li>
+						<li><a href="lorem_ipsum.php">Plosives</a></li>
+						<li><a href="lorem_ipsum.php">Fricatives</a></li>
+						<li><a href="lorem_ipsum.php">Liquids and veral nasal</a></li>
 					</ul>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Culture</a>
 					<ul>
-						<li><a href="geographical_identities.html">The country</a></li>
-						<li><a href="lorem_ipsum.html">The people</a></li>
-						<li><a href="lorem_ipsum.html">Politics and government</a></li>
-						<li><a href="lorem_ipsum.html">International relations</a></li>
-						<li><a href="lorem_ipsum.html">The legal system</a></li>
-						<li><a href="lorem_ipsum.html">The economy</a></li>
-						<li><a href="lorem_ipsum.html">Social services</a></li>
-						<li><a href="lorem_ipsum.html">Education</a></li>
-						<li><a href="lorem_ipsum.html">The media</a></li>
-						<li><a href="lorem_ipsum.html">Religion</a></li>
-						<li><a href="lorem_ipsum.html">Leisure, sports and the arts</a></li>
+						<li><a href="geographical_identities.php">The country</a></li>
+						<li><a href="lorem_ipsum.php">The people</a></li>
+						<li><a href="lorem_ipsum.php">Politics and government</a></li>
+						<li><a href="lorem_ipsum.php">International relations</a></li>
+						<li><a href="lorem_ipsum.php">The legal system</a></li>
+						<li><a href="lorem_ipsum.php">The economy</a></li>
+						<li><a href="lorem_ipsum.php">Social services</a></li>
+						<li><a href="lorem_ipsum.php">Education</a></li>
+						<li><a href="lorem_ipsum.php">The media</a></li>
+						<li><a href="lorem_ipsum.php">Religion</a></li>
+						<li><a href="lorem_ipsum.php">Leisure, sports and the arts</a></li>
 					</ul>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
@@ -129,52 +129,52 @@
 				<div class="component_left">
 					<div class="monophtongs">
 						<h2>Monophtongs</h2>
-						<a href="bee.html"><p>/ i: /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ɪ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ e /</p></a>
-						<a href="lorem_ipsum.html"><p>/ æ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ɑ: /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ʌ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ o /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ɔ: /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ʊ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ u: /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ʒ: /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ə /</p></a>
+						<a href="bee.php"><p>/ i: /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ɪ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ e /</p></a>
+						<a href="lorem_ipsum.php"><p>/ æ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ɑ: /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ʌ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ o /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ɔ: /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ʊ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ u: /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ʒ: /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ə /</p></a>
 					</div>
 					<div class="diphtongs_and_triphtongs">
 						<h2>Diphtongs and Triphtongs</h2>
-						<a href="lorem_ipsum.html"><p>/ eɪ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ aɪ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ɔɪ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ aʊ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ əʊ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ɪə /</p></a>
-						<a href="lorem_ipsum.html"><p>/ eə /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ʊə /</p></a>
-						<a href="lorem_ipsum.html"><p>/ aɪə /,/ eɪə /,/ aʊə /</p></a>
+						<a href="lorem_ipsum.php"><p>/ eɪ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ aɪ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ɔɪ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ aʊ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ əʊ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ɪə /</p></a>
+						<a href="lorem_ipsum.php"><p>/ eə /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ʊə /</p></a>
+						<a href="lorem_ipsum.php"><p>/ aɪə /,/ eɪə /,/ aʊə /</p></a>
 					</div>
 					<div class="plosives">
 						<h2>Plosives</h2>
-						<a href="lorem_ipsum.html"><p>/ p /</p></a>
-						<a href="lorem_ipsum.html"><p>/ t /</p></a>
-						<a href="lorem_ipsum.html"><p>/ k /</p></a>
-						<a href="lorem_ipsum.html"><p>/ b /</p></a>
-						<a href="lorem_ipsum.html"><p>/ d /</p></a>
-						<a href="lorem_ipsum.html"><p>/ g /</p></a>
+						<a href="lorem_ipsum.php"><p>/ p /</p></a>
+						<a href="lorem_ipsum.php"><p>/ t /</p></a>
+						<a href="lorem_ipsum.php"><p>/ k /</p></a>
+						<a href="lorem_ipsum.php"><p>/ b /</p></a>
+						<a href="lorem_ipsum.php"><p>/ d /</p></a>
+						<a href="lorem_ipsum.php"><p>/ g /</p></a>
 					</div>
 					<div class="fricatives">
 						<h2>Fricatives</h2>
-						<a href="lorem_ipsum.html"><p>/ θ /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ð /</p></a>
-						<a href="lorem_ipsum.html"><p>/ s /</p></a>
-						<a href="lorem_ipsum.html"><p>/ z /</p></a>
+						<a href="lorem_ipsum.php"><p>/ θ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ð /</p></a>
+						<a href="lorem_ipsum.php"><p>/ s /</p></a>
+						<a href="lorem_ipsum.php"><p>/ z /</p></a>
 					</div>
 					<div class="liquids_and_veral_nasal">
 						<h2>Liquids and veral nasal</h2>
-						<a href="lorem_ipsum.html"><p>/ l /</p></a>
-						<a href="lorem_ipsum.html"><p>/ r /</p></a>
-						<a href="lorem_ipsum.html"><p>/ ŋ /</p></a>
+						<a href="lorem_ipsum.php"><p>/ l /</p></a>
+						<a href="lorem_ipsum.php"><p>/ r /</p></a>
+						<a href="lorem_ipsum.php"><p>/ ŋ /</p></a>
 					</div>
 				</div>
 			</div>

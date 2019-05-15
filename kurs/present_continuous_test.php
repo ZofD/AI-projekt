@@ -19,12 +19,12 @@
 			</header>
 			<div class="menu_horizontal">
 				<div>
-					<a href="index.html">Główna</a>
+					<a href="index.php">Główna</a>
 				</div>
 				<div class="menu_horizontal_curent">
 					<a>Gramatyka</a>
 					<ul>
-						<li><a href="gramatyka_present_countinuous.html">Czasy teraźniejsze</a></li>
+						<li><a href="gramatyka_present_countinuous.php">Czasy teraźniejsze</a></li>
 						<li><a href="">Czasy przeszłe</a></li>
 						<li><a href="">Czasy przyszłe</a></li>
 						<li><a href="">Czasowniki modalne</a></li>
@@ -52,13 +52,7 @@
 					</ul>
 				</div>
 				<div>
-					<?php
-						if(isset($_SESSION['zalogowany'])){
-							echo '<a href="logout.php">Log out</a>';
-						}else{
-							echo '<a href="login.php">Log in</a>';
-						}
-					?>
+					<a href="logout.php">Log out</a>
 				</div>
 			</div>
 			<div class="content">
@@ -81,25 +75,25 @@
 				</div>	
 				<div class="content_left">
 					<h2>Czasy teraźniejsze</h2>
-					<a href="gramatyka_present_countinuous.html"><p>Present continuous</p></a>
-					<a href="lorem_ipsum.html"><p>Present simple</p></a>
-					<a href="lorem_ipsum.html"><p>Present perfect</p></a>
-					<a href="lorem_ipsum.html"><p>Present perfect continuous</p></a>
+					<a href="gramatyka_present_countinuous.php"><p>Present continuous</p></a>
+					<a href="lorem_ipsum.php"><p>Present simple</p></a>
+					<a href="lorem_ipsum.php"><p>Present perfect</p></a>
+					<a href="lorem_ipsum.php"><p>Present perfect continuous</p></a>
 					<h2>Czasy przeszłe</h2>
-					<a href="lorem_ipsum.html"><p>Past continuous</p></a>
-					<a href="lorem_ipsum.html"><p>Past simple</p></a>
-					<a href="lorem_ipsum.html"><p>Past perfect</p></a>
-					<a href="lorem_ipsum.html"><p>Past perfect continuous</p></a>
+					<a href="lorem_ipsum.php"><p>Past continuous</p></a>
+					<a href="lorem_ipsum.php"><p>Past simple</p></a>
+					<a href="lorem_ipsum.php"><p>Past perfect</p></a>
+					<a href="lorem_ipsum.php"><p>Past perfect continuous</p></a>
 					<h2>Czasy przyszłe</h2>
-					<a href="lorem_ipsum.html"><p>Future continuous</p></a>
-					<a href="lorem_ipsum.html"><p>Future simple</p></a>
-					<a href="lorem_ipsum.html"><p>Future perfect</p></a>
-					<a href="lorem_ipsum.html"><p>Future perfect continuous</p></a>
+					<a href="lorem_ipsum.php"><p>Future continuous</p></a>
+					<a href="lorem_ipsum.php"><p>Future simple</p></a>
+					<a href="lorem_ipsum.php"><p>Future perfect</p></a>
+					<a href="lorem_ipsum.php"><p>Future perfect continuous</p></a>
 					<h2>Czasy przyszłe w przeszłości</h2>
-					<a href="lorem_ipsum.html"><p>Future continuous in the past</p></a>
-					<a href="lorem_ipsum.html"><p>Future in the past</p></a>
-					<a href="lorem_ipsum.html"><p>Future perfect in the past</p></a>
-					<a href="lorem_ipsum.html"><p>Future perfect continuous in the past</p></a>
+					<a href="lorem_ipsum.php"><p>Future continuous in the past</p></a>
+					<a href="lorem_ipsum.php"><p>Future in the past</p></a>
+					<a href="lorem_ipsum.php"><p>Future perfect in the past</p></a>
+					<a href="lorem_ipsum.php"><p>Future perfect continuous in the past</p></a>
 				</div>
 			</div>
 			<footer>
