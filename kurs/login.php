@@ -103,12 +103,13 @@
 							<p class="error">
 								<?php
 									if(isset($_SESSION['blad']))echo $_SESSION['blad'];
+									unset($_SESSION['blad']);
 								?>
 							</p>
 							<p>Login:</p>
 							<input type="text" name="login"/>
 							<p>Hasło:</p>
-							<input type="text" name="password"/>
+							<input type="password" name="password"/>
 							<p>Nie posiadasz jeszcze konta? <a href="registration.php">Zarejestruj</a></p>
 							<input class="button" type="submit" name="" value="Zaloguj"/>
 						</form>
