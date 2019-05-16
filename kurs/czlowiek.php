@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!Doctype html>
 <html>
 	<head>
@@ -85,7 +88,13 @@
 					</ul>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
-					<a href="login.php">Log in</a>
+					<?php
+						if(isset($_SESSION['zalogowany'])){
+							echo '<a href="logout.php">Log out</a>';
+						}else{
+							echo '<a href="login.php">Log in</a>';
+						}
+					?>
 				</div>
 			</div>
 			<div class="content">
@@ -105,7 +114,13 @@
 						<div>
 							<h2 class="button">Show</h2>
 							<div></div>
-							<a href="lorem_ipsum.php">
+							<?php
+								if(isset($_SESSION['zalogowany'])){
+									echo '<a href="present_continuous_test.php">';
+								}else{
+									echo '<a href="login.php">';
+								}
+							?>
 								<h2 class="button">I'm ready for exam</h2>
 							</a>
 						</div>

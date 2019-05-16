@@ -125,3 +125,7 @@ label{
 .kod1Error{
     display: block;
 }
+
+.error{
+    color: red;
+}

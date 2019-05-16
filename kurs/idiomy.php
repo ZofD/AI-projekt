@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!Doctype html>
 <html>
 	<head>
@@ -84,7 +87,13 @@
 					</ul>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
-					<a href="login.php">Log in</a>
+					<?php
+						if(isset($_SESSION['zalogowany'])){
+							echo '<a href="logout.php">Log out</a>';
+						}else{
+							echo '<a href="login.php">Log in</a>';
+						}
+					?>
 				</div>
 			</nav>
 			<div class="content">

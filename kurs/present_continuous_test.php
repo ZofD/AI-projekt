@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!Doctype html>
 <html>
 	<head>
@@ -49,7 +52,7 @@
 					</ul>
 				</div>
 				<div>
-					<a>Zaloguj</a>
+					<a href="logout.php">Log out</a>
 				</div>
 			</div>
 			<div class="content">

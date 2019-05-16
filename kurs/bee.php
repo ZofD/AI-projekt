@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!Doctype html>
 <html>
 	<head>
@@ -29,6 +32,16 @@
 		<div id="container" class="container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 			<header>
 				<img src="img/logo.png">
+				<?php
+					if(isset($_SESSION['zalogowany'])){
+						echo '
+						<div class="avatar">
+							<img class="img-circle" src="">
+							<p>Witaj '.$_SESSION['login'].'</p>
+						</div>
+						';
+					}
+				?>			
 			</header>
 			<div class="menu_horizontal col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<nav class="ham_button ham_button_def col-xl-0 col-lg-0 col-md-12  col-sm-12 col-12">
@@ -84,7 +97,13 @@
 					</ul>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
-					<a href="login.php">Log in</a>
+					<?php
+						if(isset($_SESSION['zalogowany'])){
+							echo '<a href="logout.php">Log out</a>';
+						}else{
+							echo '<a href="login.php">Log in</a>';
+						}
+					?>
 				</div>
 			</div>
 			<div class="content">
