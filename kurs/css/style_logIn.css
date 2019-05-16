@@ -48,3 +48,7 @@ p > a:hover{
 label{
     width: 60%;
 }
+
+.error{
+    color: red;
+}
