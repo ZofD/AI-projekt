@@ -7,18 +7,18 @@
     	exit();
     }
     
-    $_SESSION['login'] = $login;
-    $_SESSION['haslo_hash'] = $password;
-    $_SESSION['email'] = $email;
-    $_SESSION['Pesel'] = $pesel;
-    $_SESSION['city'] = $city;
-    $_SESSION['street'] = $street;
-    $_SESSION['building'] = $building;
-    $_SESSION['flat'] = $flat;
-    $_SESSION['kod1'] = $kod1;
-    $_SESSION['postoffice'] = $poczta;
-    $_SESSION['nameUser'] = $imie;
-    $_SESSION['surname'] = $nazwisko;
+    $login = $_SESSION['login'];
+    $password = $_SESSION['haslo_hash'];
+    $email = $_SESSION['email'];
+    $pesel = $_SESSION['Pesel'];
+    $city = $_SESSION['city'];
+    $street = $_SESSION['street'];
+    $building = $_SESSION['building'];
+    $flat = $_SESSION['flat'];
+    $kod1 = $_SESSION['kod1'];
+    $poczta = $_SESSION['postoffice'];
+    $imie = $_SESSION['nameUser'];
+    $nazwisko = $_SESSION['surname'];
 
     require_once "connectKursRegi.php";
 	mysqli_report(MYSQLI_REPORT_STRICT);
@@ -31,7 +31,7 @@
                 NULL, '$login', '$password', '$email', '$pesel', 
                 '$city', '$street', '$building', '$flat', '$kod1', 
                 '$poczta', '$imie', '$nazwisko')")){
-					header('Location: login.php');
+				header('Location: login.php');
 			}else{
 				throw new Exception($polaczenie->error);
 			}

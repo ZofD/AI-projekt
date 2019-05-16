@@ -111,7 +111,7 @@
 				if($ile_takich_nickow>0)
 				{
 					$wszystko_OK=false;
-					$_SESSION['e_nick']="Istnieje już gracz o takim nicku! Wybierz inny.";
+					$_SESSION['e_nick']="Istnieje już konto o takim nicku! Wybierz inny.";
 				}
 			}
 		}catch(Exception $e){
@@ -128,7 +128,7 @@
 			$_SESSION['Pesel'] = $_POST['Pesel'];
 			$_SESSION['email'] = $_POST['email'];
 			$_SESSION['login'] = $_POST['login'];
-			$_SESSION['haslo_hash'] = $_POST['haslo_hash'];
+			$_SESSION['haslo_hash'] = $haslo_hash;
 			$_SESSION['city'] = $_POST['city'];
 			$_SESSION['street'] = $_POST['street'];
 			$_SESSION['building'] = $_POST['building'];
@@ -141,7 +141,6 @@
 			}
 
 			header('Location: regi.php');
-			exit();
 		}
 	}
     
