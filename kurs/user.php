@@ -4,6 +4,45 @@
 		header('Location: login.php');
 		exit();
 	}
+
+	require_once "connect_user.php";
+	mysqli_report(MYSQLI_REPORT_STRICT);
+	try{
+		$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
+		if ($polaczenie->connect_errno!=0){
+			//echo "Error: ".$polaczenie->connect_errno;
+			throw new Exception(mysqli_connect_errno());
+		}else{
+			$id_user = $_SESSION['id_user'];
+			if($rezultat=$polaczenie->query(sprintf("SELECT * FROM uzytkownicy WHERE id_user='%s'",mysqli_real_escape_string($polaczenie,$id_user)))){
+				$ilu_userow=$rezultat->num_rows;
+				if($ilu_userow==1){
+					$wiersz=$rezultat->fetch_assoc();
+
+					$_SESSION['zalogowany'] = true;
+					$_SESSION['id_user'] = $wiersz['id_user'];
+					$_SESSION['login'] = $wiersz['login'];
+					$_SESSION['email'] = $wiersz['email'];
+					$_SESSION['pesel'] = $wiersz['PESEL'];
+					$_SESSION['city'] = $wiersz['miejscowosc'];
+					$_SESSION['street'] = $wiersz['ulica'];
+					$_SESSION['building'] = $wiersz['nr_budynku'];
+					$_SESSION['flat'] = $wiersz['nr_lokalu'];
+					$_SESSION['kod1'] = $wiersz['kod_pocztowy'];
+					$_SESSION['postoffice'] = $wiersz['poczta'];
+					$_SESSION['nameUser'] = $wiersz['imie'];
+					$_SESSION['surname'] = $wiersz['nazwisko'];
+
+					$rezultat->free_result();
+				}
+			}
+		}
+	}catch(Exception $e){
+		echo '<span style="color:red;">Błąd serwera! Przepraszamy za niedogodności i prosimy o rejestrację w innym terminie!</span>';
+		echo '<br />Informacja developerska: '.$e;
+    }finally{
+        $polaczenie->close();
+    }
 ?>
 <!Doctype html>
 <html>
@@ -98,45 +137,39 @@
 			<div class="content">
 				<div class="component_right">
                     <h1>Dostępne testy</h1>
-                    <div class="box">
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-						</div>
+                    <form method="POST" action="test.php" class="box">
+					<?php
+						require_once "connect_user.php";
+						mysqli_report(MYSQLI_REPORT_STRICT);
+						try{
+							$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
+							if ($polaczenie->connect_errno!=0){
+								throw new Exception(mysqli_connect_errno());
+							}else{
+								$id_user = $_SESSION['id_user'];
+								if($rezultat=$polaczenie->query(sprintf("SELECT * FROM testy"))){
+									$ilu_userow=$rezultat->num_rows;
+									if($ilu_userow>0){
+										while($wiersz=$rezultat->fetch_assoc()){
+					?>
 						<div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
-                        <div>
-                            <h2>test 1<a class="button">Do testu</a></h2>
-                        </div>
+                            <h2><?php echo $wiersz['nazwa_testu']; ?><input type="submit" class="button" name="<?php echo $wiersz['nazwa_testu']; ?>" value="Do testu"/></h2>
+                        </div>				
+					<?php
+										}
+										// $rezultat->free_result();
+									}
+								}
+							}
+						}catch(Exception $e){
+							echo '<span style="color:red;">Błąd serwera! Przepraszamy za niedogodności i prosimy o rejestrację w innym terminie!</span>';
+							echo '<br />Informacja developerska: '.$e;
+						}finally{
+							$polaczenie->close();
+						}
+					?>
                     </div>
-				</div>
+				</form>
 				<div class="component_left">
                     <div class="settings">
                         <h2>ustawienia</h2>

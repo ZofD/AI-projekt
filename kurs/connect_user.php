@@ -1,6 +1,6 @@
 <?php
 	$host = "localhost";
-	$db_user = "kursLogin";
+	$db_user = "kursUser";
 	$db_password = "kurs";
 	$db_name = "projektkurs";
 ?>
