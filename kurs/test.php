@@ -29,16 +29,16 @@
 						<div>
                             <li><?php echo $wiersz['pytanie']; ?>
                                 <ul>
-                                    <input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='A' />
+                                    <input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='0' />
                                     <li><?php echo $wiersz['odp_pierwsza']; ?></li>
                                     
-                                    <input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='B' />
+                                    <input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='1' />
                                     <li><?php echo $wiersz['odp_druga']; ?></li>
 
-                                    <input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='C' />
+                                    <input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='2' />
                                     <li><?php echo $wiersz['odp_trzecia']; ?></li>
 
-                                    <input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='D' />
+                                    <input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='3' />
                                     <li><?php echo $wiersz['odp_czwarta']; ?></li>
                                 </ul>
                             </li>
@@ -48,7 +48,8 @@
 				    $rezultat->free_result();
 				}
             }
-            ?>
+            ?>  
+                <input type="submit" value="Sprawdź" />
                 </ol></form>
             <?php
 		}
