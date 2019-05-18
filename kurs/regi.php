@@ -3,7 +3,7 @@
     session_start();
 
     if ( !isset($_SESSION['regi']) ){
-		header('Location: index.php');
+		header('Location: registration.php');
     	exit();
     }
     

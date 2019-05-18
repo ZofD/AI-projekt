@@ -137,7 +137,7 @@
 			<div class="content">
 				<div class="component_right">
                     <h1>Dostępne testy</h1>
-                    <form method="POST" action="test.php" class="box">
+                    <div class="box">
 					<?php
 						require_once "connect_user.php";
 						mysqli_report(MYSQLI_REPORT_STRICT);
@@ -153,11 +153,13 @@
 										while($wiersz=$rezultat->fetch_assoc()){
 					?>
 						<div>
-                            <h2><?php echo $wiersz['nazwa_testu']; ?><input type="submit" class="button" name="<?php echo $wiersz['nazwa_testu']; ?>" value="Do testu"/></h2>
-                        </div>				
+							<form action="test.php?id=<?php echo $wiersz['nazwa_testu']; ?>" method="POST">
+                            	<h2><?php echo $wiersz['nazwa_testu']; ?><input type="submit" class="button" name="<?php echo $wiersz['nazwa_testu']; ?>" value="Do testu"/></h2>
+                        	</form>
+						</div>				
 					<?php
 										}
-										// $rezultat->free_result();
+										 $rezultat->free_result();
 									}
 								}
 							}
@@ -169,7 +171,7 @@
 						}
 					?>
                     </div>
-				</form>
+				</div>
 				<div class="component_left">
                     <div class="settings">
                         <h2>ustawienia</h2>
