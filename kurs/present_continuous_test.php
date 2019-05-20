@@ -16,6 +16,17 @@
 	<body>
 		<div id="container">
 			<header>
+				<img src="img/logo.png">
+				<?php
+					if(isset($_SESSION['zalogowany'])){
+						echo '
+						<div class="avatar">
+							<a href="user.php"><div></div></a>
+							<p>Witaj '.$_SESSION['login'].'</p>
+						</div>
+						';
+					}
+				?>
 			</header>
 			<div class="menu_horizontal">
 				<div>

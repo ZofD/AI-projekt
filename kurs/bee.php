@@ -36,7 +36,7 @@
 					if(isset($_SESSION['zalogowany'])){
 						echo '
 						<div class="avatar">
-							<img class="img-circle" src="">
+							<a href="user.php"><div></div></a>
 							<p>Witaj '.$_SESSION['login'].'</p>
 						</div>
 						';

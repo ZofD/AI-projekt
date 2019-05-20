@@ -105,7 +105,7 @@ CREATE TABLE `uzytkownicy` (
 --
 
 INSERT INTO `uzytkownicy` (`id_user`, `login`, `haslo`, `email`, `PESEL`, `miejscowosc`, `ulica`, `nr_budynku`, `nr_lokalu`, `kod_pocztowy`, `poczta`, `imie`, `nazwisko`) VALUES
-(1, 'JanK00', '$2y$10$smMb3ZiuZeqx.tITf6HU.OIoK8ICq98n4s.Bbu0diXuqXRThxD2qu', 'jankowalski@gmail.com', '00000011111', 'Radom', 'ul. Radomska', '0', '', '00-000', 'Radom', 'Jan Kowalski', 'Kowalski'),
+(1, 'JanK00', '$2y$10$smMb3ZiuZeqx.tITf6HU.OIoK8ICq98n4s.Bbu0diXuqXRThxD2qu', 'jankowalski@gmail.com', '00000011111', 'Radom', 'ul. Radomska', '0', '', '00-000', 'Radom', 'Jan Kowalski', 'Kowalski');
 
 --
 -- Indeksy dla zrzutów tabel

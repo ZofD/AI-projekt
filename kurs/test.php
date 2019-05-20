@@ -22,8 +22,8 @@
             <form action="spr.php?id=<?php echo $fid; ?>" method="POST"><ol>
         <?php
 		if($rezultat=$polaczenie->query(sprintf("SELECT id_pytania, pytanie, odp_pierwsza, odp_druga, odp_trzecia, odp_czwarta FROM pytania AS p LEFT JOIN testy AS t ON p.id_testu = t.id_testu WHERE t.nazwa_testu='$fid'"))){
-                $ilu_userow=$rezultat->num_rows;
-				if($ilu_userow>0){
+                $ile_pytan=$rezultat->num_rows;
+				if($ile_pytan>0){
 					while($wiersz=$rezultat->fetch_assoc()){
 					?>
 						<div>
