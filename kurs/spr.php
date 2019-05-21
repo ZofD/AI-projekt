@@ -22,8 +22,8 @@
 				throw new Exception(mysqli_connect_errno());
 		}else{
 		if($rezultat=$polaczenie->query(sprintf("SELECT id_pytania, poprawna_odpowiedz FROM pytania AS p LEFT JOIN testy AS t ON p.id_testu = t.id_testu WHERE t.nazwa_testu='$fid'"))){
-                $ilu_userow=$rezultat->num_rows;
-				if($ilu_userow>0){
+                $poprawne_odpowiedzi=$rezultat->num_rows;
+				if($poprawne_odpowiedzi>0){
 					while($wiersz=$rezultat->fetch_assoc()){
                         $total++;
                         $id_pytania = $wiersz['id_pytania'];
