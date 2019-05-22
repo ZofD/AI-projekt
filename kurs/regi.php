@@ -2,6 +2,11 @@
 
     session_start();
 
+    if($_SESSION['zalogowany']){
+        header('Location: user.php');
+    	exit();
+    }
+
     if ( !isset($_SESSION['regi']) ){
 		header('Location: registration.php');
     	exit();
