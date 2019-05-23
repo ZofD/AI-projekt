@@ -242,3 +242,42 @@ footer{
 	text-align: center;
 	margin: 0px;
 }
+
+input[type='radio']{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 90%;
+    border: 1px solid #0082ff;
+}
+
+input[type='radio']:active{
+	box-shadow: inset 0px -2px 4px 0px rgb(0, 0, 0,0.4);
+}
+
+input[type='radio']:checked{
+	background-image: url("../img/kropka.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+    border: 2px solid #0082ff;
+}
+
+input[type='checkbox']{
+	-webkit-appearance: none;
+    width: 15px;
+	height: 15px;
+	border: 1px solid #0082ff;
+}
+
+input[type='checkbox']:active{
+	box-shadow: inset 0px -2px 4px 0px rgb(0, 0, 0,0.4);
+}
+
+input[type='checkbox']:checked{
+	background-image: url("../img/fajka.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	border: 2px solid #0082ff;
+}

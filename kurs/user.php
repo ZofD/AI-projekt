@@ -62,6 +62,7 @@
 		<script src="./jq/jquery-3.3.1.min.js"></script>
 		<script src="./jq/jquery.color-2.1.2.min.js"></script>
 		<script src="./js/jq.js"></script>
+		<script src="./js/jq_user.js"></script>
 
 		<script src="./js/jq_menuMob.js"></script>
 
@@ -178,15 +179,21 @@
 				</div>
 				<div class="component_left">
                     <div class="settings">
-                        <h2>ustawienia</h2>
-                        <p>e-mail: example@interia.pl</p>
-                        <p>e-mail: example@interia.pl</p>
-                        <p>e-mail: example@interia.pl</p>
-                        <h2>bezpieczenstwo</h2>
-                        <p>e-mail: example@interia.pl</p>
-                        <p>e-mail: example@interia.pl</p>
-                        <p>e-mail: example@interia.pl</p>
-                    </div>
+						<h2><?php echo $_SESSION['nameUser']." ".$_SESSION['surname']; ?><input type="button" /></h2>
+						<p>Avatar: </p>
+						<h2>ustawienia</h2>
+						<p>e-mail: <?php echo "<span>".$_SESSION['email']."</span>"; ?><input type="button" /></p>						</p>
+						<p>Login: <?php echo "<span>".$_SESSION['login']."</span>"; ?><input type="button" /></p>
+						<p><span>Zmień hasło</span> <input type="button" /></p>
+						<h2>dane osobowe</h2>
+						<p>PESEL: <?php echo "<span>".$_SESSION['pesel']."</span>"; ?></p>
+						<p>Miejscowość: <?php echo "<span>".$_SESSION['city']."</span>"; ?><input type="button" /></p>
+						<p>Ulica: <?php echo "<span>".$_SESSION['street']."</span>"; ?><input type="button" /></p>
+						<p>Nr. budynku: <?php echo "<span>".$_SESSION['building']."</span>"; ?><input type="button" /></p>
+						<p>Nr. lokalu: <?php try{echo "<span>".$_SESSION['flat']."</span>";}catch(Exception $e){echo "<span>brak informacji</span>";} ?><input type="button" /></p>
+						<p>Kod pocztowy: <?php echo "<span>".$_SESSION['kod1']."</span>"; ?><input type="button" /></p>
+						<p>Poczta: <?php echo "<span>".$_SESSION['postoffice']."</span>"; ?><input type="button" /></p>
+					</div>
 				</div>
 			</div>
 			<footer>

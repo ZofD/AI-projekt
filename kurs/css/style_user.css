@@ -36,3 +36,35 @@ form > h2 > input{
 .button:hover {
 	color: white!important;
 }
+
+p > span{
+    color: #0082ff;
+    cursor: pointer;
+}
+
+p > span:hover{
+    text-decoration: underline;
+}
+
+input[type='button']{
+    background-image: url("../img/ustawienia.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 4px;
+    padding: 0px;
+    float: right;
+    border: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+h2 > input[type='button']{
+    margin-top: 11px;
+}
+
+.settings > p > form, .settings > h2 > form{
+    border: 1px solid black;
+    display: none;
+    padding: 20px 10px;
+}

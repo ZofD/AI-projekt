@@ -50,7 +50,7 @@
 						<header>
 							<img src="img/logo.png">
 							<div class="avatar">
-								<a href=""><div></div></a>
+								<a href="user.php"><div></div></a>
 								<p><?php echo 'Witaj '.$_SESSION['login'];?></p>
 							</div>
 						</header>
