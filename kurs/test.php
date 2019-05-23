@@ -7,7 +7,12 @@
 		exit();
 	}
 
-    $fid = $_GET['id'];
+	$fid = $_GET['id'];
+	
+	if($fid == null && $fid == ''){
+		header('Location: user.php');
+		exit();
+	}
 
 	require_once "connect_user.php";
 	mysqli_report(MYSQLI_REPORT_STRICT);

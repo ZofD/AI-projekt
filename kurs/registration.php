@@ -1,5 +1,11 @@
 <?php
 	session_start();
+
+	if($_SESSION['zalogowany']){
+        header('Location: user.php');
+    	exit();
+    }
+
 	/*
 	$_SESSION['e_pesel']=FALSE;
 	$_SESSION['e_email']=FALSE;
