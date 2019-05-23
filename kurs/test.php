@@ -84,7 +84,7 @@
 															</li>
 
 															<li>
-																<input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='3' />
+																<input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='3' checked />
 																<?php echo $wiersz['odp_czwarta']; ?>
 															</li>
 														</ul>
