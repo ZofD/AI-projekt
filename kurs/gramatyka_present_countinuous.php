@@ -219,7 +219,7 @@
 					<div class="separator"></div>
 					<?php
 						if(isset($_SESSION['zalogowany'])){
-							echo '<a href="user.php">';
+							echo '<a href="test.php?id=Present%20continuous">';
 						}else{
 							echo '<a href="login.php">';
 						}
