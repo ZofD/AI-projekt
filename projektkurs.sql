@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Czas generowania: 23 Maj 2019, 21:43
--- Wersja serwera: 10.1.37-MariaDB
--- Wersja PHP: 7.3.0
+-- Czas generowania: 24 Maj 2019, 14:36
+-- Wersja serwera: 10.1.16-MariaDB
+-- Wersja PHP: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -21,7 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Baza danych: `projektkurs`
 --
-
 CREATE DATABASE IF NOT EXISTS `projektkurs` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `projektkurs`;
 
@@ -48,26 +45,26 @@ CREATE TABLE `pytania` (
 
 INSERT INTO `pytania` (`id_pytania`, `id_testu`, `pytanie`, `odp_pierwsza`, `odp_druga`, `odp_trzecia`, `odp_czwarta`, `poprawna_odpowiedz`) VALUES
 (1, 1, 'I ... icecreams!', 'likes', 'is like', 'likying', 'none of the above', '3'),
-(2, 1, 'The meals ... very expensive.', 'isn\'t', 'aren\'t', 'not are', 'none of the above', '1'),
-(3, 1, '... I invited to Jim\'s party?', 'Amn\'t', 'Don\'t', 'Aren\'t', 'none of the above', '2'),
-(4, 1, 'The shoe shop ... the shoes I saw last week.', 'doesn\'t have got', 'hasn\'t got', 'doesn\'t got', 'none of the above', '1'),
-(5, 1, 'I\'m exhausted. I\'m going to ... a sleep for half an hour.', 'have', 'be', 'have got', 'none of the above', '0'),
-(6, 1, 'Don\'t bother to invite Gerry - he ... musicals!', 'doesn\'t like', 'doesn\'t likes', 'isn\'t like', 'none of the above', '0'),
+(2, 1, 'The meals ... very expensive.', 'isn''t', 'aren''t', 'not are', 'none of the above', '1'),
+(3, 1, '... I invited to Jim''s party?', 'Amn''t', 'Don''t', 'Aren''t', 'none of the above', '2'),
+(4, 1, 'The shoe shop ... the shoes I saw last week.', 'doesn''t have got', 'hasn''t got', 'doesn''t got', 'none of the above', '1'),
+(5, 1, 'I''m exhausted. I''m going to ... a sleep for half an hour.', 'have', 'be', 'have got', 'none of the above', '0'),
+(6, 1, 'Don''t bother to invite Gerry - he ... musicals!', 'doesn''t like', 'doesn''t likes', 'isn''t like', 'none of the above', '0'),
 (7, 1, 'I really like Leona Lewis - she ... so well.', 'sing', 'is sing', 'sings', 'none of the above', '2'),
-(8, 1, 'Most children ... enough green vegetables.', 'eatn\'t', 'dont\'eat', 'not eat', 'none of the above', '1'),
+(8, 1, 'Most children ... enough green vegetables.', 'eatn''t', 'dont''eat', 'not eat', 'none of the above', '1'),
 (9, 1, 'I ... on a colour printer, but mine is broken at the moment.', 'am usually print', 'print usually', 'usually print', 'none of the above', '2'),
 (10, 1, '... on the report for Grant Brothers at the moment?', 'Are you work', 'You work', 'Are you working', 'none of the above', '2'),
 (11, 1, 'Is Alana coming this evening? No, she ... at home with the kids.', 'staying', 'stays', 'is staying', 'none of the above', '2'),
-(12, 1, 'Let\'s put the heating on. The nights ... colder now.', 'are getting', 'get', 'is getting', 'none of the above', '0'),
+(12, 1, 'Let''s put the heating on. The nights ... colder now.', 'are getting', 'get', 'is getting', 'none of the above', '0'),
 (13, 1, 'Can u tell the childern to be quiet? They ... !', 'argue always', 'are always arguing', 'always argue', 'none of the above', '1'),
-(14, 1, 'In this picture, the woman ... a car that\'s broken down.', 'is reparing', 'is repair', 'repairs', 'none of the above', '0'),
+(14, 1, 'In this picture, the woman ... a car that''s broken down.', 'is reparing', 'is repair', 'repairs', 'none of the above', '0'),
 (15, 1, 'A student techer ... our class while Ms Bennett has her baby.', 'takes', 'does take', 'is taking', 'none of the above', '2'),
-(16, 1, 'What ... when you\'re in bed at night?', 'you usually read', 'do you usually read', 'are you usually reading', 'none of the above', '1'),
+(16, 1, 'What ... when you''re in bed at night?', 'you usually read', 'do you usually read', 'are you usually reading', 'none of the above', '1'),
 (17, 1, 'The film ... with a car crash, and then ......', 'is open', 'opens', 'is opening', 'none of the above', '1'),
 (18, 1, 'Older people ... more help from the government this year.', 'get', 'are get', 'are getting', 'none of the above', '2'),
 (19, 1, 'Is this the soup for the dinner party tonight? Mmm, it ... delicious!', 'tastes', 'is tasting', 'is tasty', 'none of the above', '0'),
-(20, 1, '... the date of Dan\'s wedding anniversary? I\'ve forgotten it.', 'Do you remember', 'Are you remembering', 'You remember', 'none of the above', '0'),
-(21, 1, 'We don\'t need to rush - this bus ... late!', 'is always', 'always is', 'always', 'none of the above', '0');
+(20, 1, '... the date of Dan''s wedding anniversary? I''ve forgotten it.', 'Do you remember', 'Are you remembering', 'You remember', 'none of the above', '0'),
+(21, 1, 'We don''t need to rush - this bus ... late!', 'is always', 'always is', 'always', 'none of the above', '0');
 
 -- --------------------------------------------------------
 
@@ -97,9 +94,14 @@ INSERT INTO `testy` (`id_testu`, `nazwa_testu`) VALUES
 CREATE TABLE `testy_uzytkownikow` (
   `id_testu` int(11) NOT NULL,
   `id_uzytkownika` int(11) NOT NULL,
-  `zdany` tinyint(1) NOT NULL,
-  `data` date NOT NULL
+  `zdany` int(1) NOT NULL,
+  `data` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `wynik` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Zrzut danych tabeli `testy_uzytkownikow`
+--
 
 -- --------------------------------------------------------
 
@@ -128,26 +130,27 @@ CREATE TABLE `uzytkownicy` (
 --
 
 INSERT INTO `uzytkownicy` (`id_user`, `login`, `haslo`, `email`, `PESEL`, `miejscowosc`, `ulica`, `nr_budynku`, `nr_lokalu`, `kod_pocztowy`, `poczta`, `imie`, `nazwisko`) VALUES
-(13, 'hasloJestTakeSamo', '$2y$10$aWCahf5htKXA4intm6S5W.G91dqomr6QnKg/yTkA/WoEPJLaTPAjq', 'kobieta@interia.pl', '12345678901', 'Warszawa', 'Podmiejska', '80', '80', '80-800', 'Warszawa', 'Konstancja', 'Mrozek');
+(1, 'hasloJestTakeSamo', '$2y$10$aWCahf5htKXA4intm6S5W.G91dqomr6QnKg/yTkA/WoEPJLaTPAjq', 'kobieta@interia.pl', '12345678901', 'Warszawa', 'Podmiejska', '80', '80', '80-800', 'Warszawa', 'Konstancja', 'Mrozek'),
+(2, 'JanK00', '$2y$10$3XAnfTWXTE2u2BRS2IdgeeddjyOxdF9ubWoK.C86O..qCOI63NVNC', 'jankowalski@gmail.com', '00000011111', 'Radom', 'ul. Radomska', '21', '', '00-000', 'Radom', 'Jan', 'Kowalski');
 
 --
 -- Indeksy dla zrzutów tabel
 --
 
 --
--- Indeksy dla tabeli `pytania`
+-- Indexes for table `pytania`
 --
 ALTER TABLE `pytania`
   ADD PRIMARY KEY (`id_pytania`);
 
 --
--- Indeksy dla tabeli `testy`
+-- Indexes for table `testy`
 --
 ALTER TABLE `testy`
   ADD PRIMARY KEY (`id_testu`);
 
 --
--- Indeksy dla tabeli `uzytkownicy`
+-- Indexes for table `uzytkownicy`
 --
 ALTER TABLE `uzytkownicy`
   ADD PRIMARY KEY (`id_user`);
@@ -161,20 +164,16 @@ ALTER TABLE `uzytkownicy`
 --
 ALTER TABLE `pytania`
   MODIFY `id_pytania` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
-
 --
 -- AUTO_INCREMENT dla tabeli `testy`
 --
 ALTER TABLE `testy`
   MODIFY `id_testu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
 --
 -- AUTO_INCREMENT dla tabeli `uzytkownicy`
 --
 ALTER TABLE `uzytkownicy`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-COMMIT;
-
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

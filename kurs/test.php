@@ -64,13 +64,15 @@
 								<div class="">
 									<form action="spr.php?id=<?php echo $fid; ?>" method="POST">
 									<?php
-										if($rezultat=$polaczenie->query(sprintf("SELECT id_pytania, pytanie, odp_pierwsza, odp_druga, odp_trzecia, odp_czwarta FROM pytania AS p LEFT JOIN testy AS t ON p.id_testu = t.id_testu WHERE t.nazwa_testu='$fid'"))){
+										if($rezultat=$polaczenie->query(sprintf("SELECT id_pytania, pytanie, odp_pierwsza, odp_druga, odp_trzecia, odp_czwarta, t.id_testu FROM pytania AS p LEFT JOIN testy AS t ON p.id_testu = t.id_testu WHERE t.nazwa_testu='$fid'"))){
 											$ile_pytan=$rezultat->num_rows;
 											if($ile_pytan>0){
 												while($wiersz=$rezultat->fetch_assoc()){
 													?>
 													<div>
-														<?php echo "<h3>".$wiersz['pytanie']."</h3>"; ?>
+														<?php
+															$_SESSION['id_testu'] = $wiersz['id_testu'];
+														 	echo "<h3>".$wiersz['pytanie']."</h3>"; ?>
 														<ul>
 															<li>
 																<input type='radio' name='answer<?php echo $wiersz['id_pytania']; ?>' id='answer<?php echo $wiersz['id_pytania']; ?>' value='0' />
