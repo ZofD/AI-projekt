@@ -40,7 +40,6 @@
 					<script src="./jq/jquery-3.3.1.min.js"></script>
 					<script src="./jq/jquery.color-2.1.2.min.js"></script>
 					<script src="./js/jq.js"></script>
-					<script src="./js/jq_login.js"></script>
 
 					<script src="./js/jq_menuMob.js"></script>
 
