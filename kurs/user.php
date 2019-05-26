@@ -179,7 +179,7 @@
 				</div>
 				<div class="component_left">
                     <div class="settings">
-						<h2><?php echo $_SESSION['nameUser']." ".$_SESSION['surname']; ?><input type="button" /></h2>
+						<h2><?php echo $_SESSION['nameUser']." ".$_SESSION['surname']; ?></h2>
 						<p>Avatar: </p>
 						<h2>ustawienia</h2>
 						<p>e-mail: <?php echo "<span>".$_SESSION['email']."</span>"; ?><input type="button" /></p>						</p>
@@ -197,7 +197,7 @@
 				</div>
 			</div>
 			<footer>
-				<h5>Design & Code by Łukasz Kwaśny i Kamil Dziok</h5>
+				<h5>Design & Code by Łukasz Kwaśny & Kamil Dziok</h5>
 			</footer>
 		</div>
 	</body>
