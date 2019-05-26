@@ -189,6 +189,7 @@
 				</div>
 			</div>
 			<footer>
+				<h5>Design & Code by Łukasz Kwaśny i Kamil Dziok</h5>
 			</footer>
 		</div>
 	</body>

@@ -52,20 +52,12 @@
 					<a>Gramar</a>
 					<ul>
 						<li><a href="gramatyka_present_countinuous.php">Present tenses</a></li>
-						<li><a href="lorem_ipsum.php">Past tenses</a></li>
-						<li><a href="lorem_ipsum.php">Future tenses</a></li>
-						<li><a href="lorem_ipsum.php">Modal verbs</a></li>
 					</ul>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Vocabulary</a>
 					<ul>
 						<li><a href="czlowiek.php">Human</a></li>
-						<li><a href="lorem_ipsum.php">Home</a></li>
-						<li><a href="lorem_ipsum.php">School</a></li>
-						<li><a href="lorem_ipsum.php">Job</a></li>
-						<li><a href="lorem_ipsum.php">Family and friends</a></li>
-						<li><a href="lorem_ipsum.php">Food</a></li>
 						<li><a href="idiomy.php">Idioms</a></li>
 					</ul>
 				</div>
@@ -73,26 +65,12 @@
 					<a>Phonetics</a>
 					<ul>
 						<li><a href="bee.php">Monophtongs</a></li>
-						<li><a href="lorem_ipsum.php">Diphtongs and Triphtongs</a></li>
-						<li><a href="lorem_ipsum.php">Plosives</a></li>
-						<li><a href="lorem_ipsum.php">Fricatives</a></li>
-						<li><a href="lorem_ipsum.php">Liquids and veral nasal</a></li>
 					</ul>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
 					<a>Culture</a>
 					<ul>
 						<li><a href="geographical_identities.php">The country</a></li>
-						<li><a href="lorem_ipsum.php">The people</a></li>
-						<li><a href="lorem_ipsum.php">Politics and government</a></li>
-						<li><a href="lorem_ipsum.php">International relations</a></li>
-						<li><a href="lorem_ipsum.php">The legal system</a></li>
-						<li><a href="lorem_ipsum.php">The economy</a></li>
-						<li><a href="lorem_ipsum.php">Social services</a></li>
-						<li><a href="lorem_ipsum.php">Education</a></li>
-						<li><a href="lorem_ipsum.php">The media</a></li>
-						<li><a href="lorem_ipsum.php">Religion</a></li>
-						<li><a href="lorem_ipsum.php">Leisure, sports and the arts</a></li>
 					</ul>
 				</div>
 				<div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
@@ -155,6 +133,7 @@
 				</div>
 			</div>
 			<footer>
+				<h5>Design & Code by Łukasz Kwaśny i Kamil Dziok</h5>
 			</footer>
 		</div>
 	</body>
