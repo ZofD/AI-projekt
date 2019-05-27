@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 27 Maj 2019, 21:42
+-- Czas generowania: 27 Maj 2019, 22:37
 -- Wersja serwera: 10.1.37-MariaDB
 -- Wersja PHP: 7.3.0
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Baza danych: `projektkurs`
 --
+CREATE DATABASE IF NOT EXISTS `projektkurs` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `projektkurs`;
 
 -- --------------------------------------------------------
 
@@ -130,6 +132,14 @@ CREATE TABLE `uzytkownicy` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Zrzut danych tabeli `uzytkownicy`
+--
+
+INSERT INTO `uzytkownicy` (`id_user`, `login`, `haslo`, `email`, `PESEL`, `miejscowosc`, `ulica`, `nr_budynku`, `nr_lokalu`, `kod_pocztowy`, `poczta`, `imie`, `nazwisko`, `admin`) VALUES
+(19, 'admin', '$2y$10$HLcflhD7eQrR83G.IwuyBeI6EIFy/.OxTu11iqQQSEJ7RQ.XvG19e', 'lukasz@interia.pl', '12345678900', 'RzeszÃ³w', 'Herbowa', '3424', '43', '354-43', 'RzeszÃ³w', 'Åukasz', 'KwaÅ›ny', 1),
+(20, 'naPewnoNieAdmin', '$2y$10$f8xefXgmYu9OV99cLjPkMObhmyoo.FVwOs3onhflYt90zI.7mhamq', 'kamil@interia.pl', '12345678900', 'RzeszÃ³w', 'Herbowa', '3424', '43', '354-43', 'RzeszÃ³w', 'Kamil', 'Dziobak', 0);
+
+--
 -- Indeksy dla zrzutów tabel
 --
 
@@ -171,7 +181,7 @@ ALTER TABLE `testy`
 -- AUTO_INCREMENT dla tabeli `uzytkownicy`
 --
 ALTER TABLE `uzytkownicy`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
