@@ -5,12 +5,12 @@
 		exit();
 	}
 
-	if($_SESSION['admin'] == 1){
-		header('Location: admin.php');
+	if($_SESSION['admin'] == 0){
+		header('Location: user.php');
 		exit();
 	}
 
-	require_once "connect_user.php";
+	require_once "connect_admin.php";
 	mysqli_report(MYSQLI_REPORT_STRICT);
 	try{
 		$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
@@ -20,8 +20,8 @@
 		}else{
 			$id_user = $_SESSION['id_user'];
 			if($rezultat=$polaczenie->query(sprintf("SELECT * FROM uzytkownicy WHERE id_user='%s'",mysqli_real_escape_string($polaczenie,$id_user)))){
-				$ilu_userow=$rezultat->num_rows;
-				if($ilu_userow==1){
+				$dane=$rezultat->num_rows;
+				if($dane==1){
 					$wiersz=$rezultat->fetch_assoc();
 
 					$_SESSION['zalogowany'] = true;
@@ -146,10 +146,10 @@
 			</div>
 			<div class="content">
 				<div class="component_right">
-                    <h1>Dostępne testy</h1>
+                    <h1>Dostępne konta</h1>
                     <div class="box">
 					<?php
-						require_once "connect_user.php";
+						require_once "connect_admin.php";
 						mysqli_report(MYSQLI_REPORT_STRICT);
 						try{
 							$polaczenie = @new mysqli($host, $db_user, $db_password, $db_name);
@@ -157,14 +157,14 @@
 								throw new Exception(mysqli_connect_errno());
 							}else{
 								$id_user = $_SESSION['id_user'];
-								if($rezultat=$polaczenie->query(sprintf("SELECT * FROM testy"))){
+								if($rezultat=$polaczenie->query(sprintf("SELECT * FROM uzytkownicy WHERE admin='0'"))){
 									$ilu_userow=$rezultat->num_rows;
 									if($ilu_userow>0){
 										while($wiersz=$rezultat->fetch_assoc()){
 					?>
 						<div>
-							<form action="test.php?id=<?php echo $wiersz['nazwa_testu']; ?>" method="POST">
-                            	<h2><?php echo $wiersz['nazwa_testu']; ?><input type="submit" class="button" name="<?php echo $wiersz['nazwa_testu']; ?>" value="Do testu"/></h2>
+							<form action="delete_user.php?login=<?php echo $wiersz['login']; ?>" method="POST">
+                            	<h2><?php echo $wiersz['login']; ?><input type="submit" class="button" name="<?php echo $wiersz['login']; ?>" value="usuń"/></h2>
                         	</form>
 						</div>				
 					<?php

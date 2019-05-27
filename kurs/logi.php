@@ -12,7 +12,7 @@
 			$haslo = $_POST['password'];
 			$login = htmlentities($login, ENT_QUOTES, "UTF-8");
 			//$sql="SELECT login, haslo FROM uzytkownicy WHERE login='$login' AND haslo='$haslo'";
-			if($rezultat=$polaczenie->query(sprintf("SELECT id_user, login, haslo FROM uzytkownicy WHERE login='%s'",mysqli_real_escape_string($polaczenie,$login)))){
+			if($rezultat=$polaczenie->query(sprintf("SELECT id_user, login, haslo, admin FROM uzytkownicy WHERE login='%s'",mysqli_real_escape_string($polaczenie,$login)))){
 				$ilu_userow=$rezultat->num_rows;
 				if($ilu_userow==1){
 					$wiersz=$rezultat->fetch_assoc();
@@ -20,9 +20,14 @@
 						$_SESSION['zalogowany'] = true;
 						$_SESSION['id_user'] = $wiersz['id_user'];
 						$_SESSION['login'] = $wiersz['login'];
+						$_SESSION['admin'] = $wiersz['admin'];
 						unset($_SESSION['blad']);
 						$rezultat->free_result();
-						header('Location: user.php');
+						if($wiersz['admin'] == 0){
+							header('Location: user.php');
+						}else{
+							header('Location: admin.php');
+						}
 					}else{
 						$_SESSION['blad'] = 'Nieprawidłowe hasło!';
 						header('Location: login.php');

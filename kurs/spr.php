@@ -113,7 +113,7 @@
 						<header>
 							<img src="img/logo.png">
 							<div class="avatar">
-								<a href="user.php"><div></div></a>
+								<a href="<?php if($_SESSION['admin'] == 1){echo "admin.php";}else{echo "user.php";} ?>"><div></div></a>
 								<p><?php echo 'Witaj '.$_SESSION['login'];?></p>
 							</div>
 						</header>
@@ -133,7 +133,7 @@
 											<p>
 												Twój wynik to: <?php echo " ".$wynik."%"; ?>
 											</p>
-											<a href='user.php' class='button'>Powrót</a>
+											<a href="<?php if($_SESSION['admin'] == 1){echo "admin.php";}else{echo "user.php";} ?>" class="button">Powrót</a>
 										</div>
 									</form>
 								</div>

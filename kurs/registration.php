@@ -1,10 +1,14 @@
 <?php
 	session_start();
 
-	if($_SESSION['zalogowany']){
-        header('Location: user.php');
-    	exit();
-    }
+	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true)){
+		if($_SESSION['admin'] == 0){
+			header('Location: user.php');
+		}else{
+			header('Location: admin.php');
+		}
+		exit();
+	}
 
 	/*
 	$_SESSION['e_pesel']=FALSE;

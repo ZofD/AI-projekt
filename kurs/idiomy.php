@@ -34,12 +34,12 @@
 				<img src="img/logo.png">
 				<?php
 					if(isset($_SESSION['zalogowany'])){
-						echo '
+						?>
 						<div class="avatar">
-							<a href="user.php"><div></div></a>
-							<p>Witaj '.$_SESSION['login'].'</p>
+							<a href="<?php if($_SESSION['admin'] == 1){echo "admin.php";}else{echo "user.php";} ?>"><div></div></a>
+							<p><?php echo "Witaj ".$_SESSION['login']; ?></p>
 						</div>
-						';
+						<?php
 					}
 				?>
 			</header>

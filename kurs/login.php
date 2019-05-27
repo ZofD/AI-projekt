@@ -1,7 +1,11 @@
 <?php
 	session_start();
 	if ((isset($_SESSION['zalogowany'])) && ($_SESSION['zalogowany']==true)){
-		header('Location: user.php');
+		if($_SESSION['admin'] == 0){
+			header('Location: user.php');
+		}else{
+			header('Location: admin.php');
+		}
 		exit();
 	}
 ?>
