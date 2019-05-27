@@ -21,6 +21,7 @@ SET time_zone = "+00:00";
 --
 -- Baza danych: `projektkurs`
 --
+DROP DATABASE `projektkurs`;
 CREATE DATABASE IF NOT EXISTS `projektkurs` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `projektkurs`;
 
@@ -105,9 +106,6 @@ CREATE TABLE `testy_uzytkownikow` (
 -- Zrzut danych tabeli `testy_uzytkownikow`
 --
 
-INSERT INTO `testy_uzytkownikow` (`id_testu`, `id_uzytkownika`, `zdany`, `data`, `wynik`) VALUES
-(1, 13, 0, '2019-05-27 19:35:30', 4.76);
-
 -- --------------------------------------------------------
 
 --
@@ -134,10 +132,6 @@ CREATE TABLE `uzytkownicy` (
 --
 -- Zrzut danych tabeli `uzytkownicy`
 --
-
-INSERT INTO `uzytkownicy` (`id_user`, `login`, `haslo`, `email`, `PESEL`, `miejscowosc`, `ulica`, `nr_budynku`, `nr_lokalu`, `kod_pocztowy`, `poczta`, `imie`, `nazwisko`, `admin`) VALUES
-(19, 'admin', '$2y$10$HLcflhD7eQrR83G.IwuyBeI6EIFy/.OxTu11iqQQSEJ7RQ.XvG19e', 'lukasz@interia.pl', '12345678900', 'RzeszÃ³w', 'Herbowa', '3424', '43', '354-43', 'RzeszÃ³w', 'Åukasz', 'KwaÅ›ny', 1),
-(20, 'naPewnoNieAdmin', '$2y$10$f8xefXgmYu9OV99cLjPkMObhmyoo.FVwOs3onhflYt90zI.7mhamq', 'kamil@interia.pl', '12345678900', 'RzeszÃ³w', 'Herbowa', '3424', '43', '354-43', 'RzeszÃ³w', 'Kamil', 'Dziobak', 0);
 
 --
 -- Indeksy dla zrzutów tabel
